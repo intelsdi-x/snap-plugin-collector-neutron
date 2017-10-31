@@ -1,8 +1,10 @@
-hash: 48c47bed380443570cca374ab477a0cefebc1a7c4da0f2a54f9a7df5b9243dec
-updated: 2016-11-29T16:09:18.442750149+01:00
+hash: 377d3384c43fddcdd27c5bc9d6d1799ccba49092ad184d83c324a9201219c938
+updated: 2017-11-01T06:00:08.050837702+08:00
 imports:
+- name: github.com/asaskevich/govalidator
+  version: 9699ab6b38bee2e02cd3fe8b99ecf67665395c96
 - name: github.com/intelsdi-x/snap
-  version: cd9c1a86ea2a9d5821c6db91e4324f6caf6ba85c
+  version: 79e1dd457d77c985491c2f4746cbc425fb3dc2dd
   subpackages:
   - control/plugin
   - control/plugin/cpolicy
@@ -13,16 +15,17 @@ imports:
   - core/ctypes
   - core/serror
   - pkg/ctree
+  - pkg/fileutils
   - pkg/schedule
   - pkg/stringutils
   - scheduler/wmap
 - name: github.com/intelsdi-x/snap-plugin-utilities
-  version: 3c37e3965f3fc2f24714779d3bae7ba7032b87a9
+  version: 53c6d26990688f3f277511f5501518167f4cb798
   subpackages:
   - config
   - str
 - name: github.com/mitchellh/mapstructure
-  version: f3009df150dadf309fdee4a54ed65c124afad715
+  version: 06020f85339e21b2478f756a78e295255ffa4d6a
 - name: github.com/rackspace/gophercloud
   version: e00690e87603abe613e9f02c816c7c4bef82e063
   subpackages:
@@ -41,7 +44,7 @@ imports:
   - testhelper/client
 - name: github.com/robfig/cron
   version: 32d9c273155a0506d27cf73dd1246e86a470997e
-- name: github.com/Sirupsen/logrus
+- name: github.com/sirupsen/logrus
   version: be52937128b38f1d99787bb476c789e2af1147f1
 - name: golang.org/x/sys
   version: c8bc69bc2db9c57ccf979550bc69655df5039a8a
@@ -51,7 +54,7 @@ imports:
   version: c1cd2254a6dd314c9d73c338c12688c9325d85c6
 testImports:
 - name: github.com/davecgh/go-spew
-  version: 04cdfd42973bb9c8589fd6a731800cf222fde1a9
+  version: 6d212800a42e8ab5c146b8ace3490ee17e5225f9
   subpackages:
   - spew
 - name: github.com/gopherjs/gopherjs
@@ -76,7 +79,7 @@ testImports:
   - convey/gotest
   - convey/reporting
 - name: github.com/stretchr/testify
-  version: 18a02ba4a312f95da08ff4cfc0055750ce50ae9e
+  version: 69483b4bd14f5845b5a1e55bca19e954e827f1d0
   subpackages:
   - assert
   - require
