@@ -25,9 +25,9 @@ import (
 	"sync"
 	"time"
 
-	log "github.com/Sirupsen/logrus"
 	openstackintel "github.com/intelsdi-x/snap-plugin-collector-neutron/openstack"
 	openstackgophercloud "github.com/rackspace/gophercloud/openstack"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/intelsdi-x/snap-plugin-utilities/config"
 	"github.com/intelsdi-x/snap/control/plugin"
